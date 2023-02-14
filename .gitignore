@@ -11,8 +11,6 @@ out/
 .settings
 .springBeans
 .sts4-cache
-.patch
-.xml
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
@@ -29,3 +27,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### FILES ###
+*.patch
+*.xml

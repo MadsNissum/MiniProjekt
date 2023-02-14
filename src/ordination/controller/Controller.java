@@ -38,8 +38,8 @@ public class Controller {
 	 * @return opretter og returnerer en PN ordination.
 	 */
 	public PN opretPNOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antal) {
-		// TODO
-		return null;
+		PN pn = new PN(startDen, slutDen, patient, laegemiddel, antal);
+		return pn;
 	}
 
 	/**
@@ -73,7 +73,7 @@ public class Controller {
 	 * Pre: ordination og dato er ikke null
 	 */
 	public void ordinationPNAnvendt(PN ordination, LocalDate dato) {
-		// TODO
+		ordination.givDosis(dato);
 	}
 
 	/**

@@ -8,18 +8,11 @@ import static java.time.temporal.ChronoUnit.DAYS;
 public class PN extends Ordination{
 
     private double antalEnheder;
-    private int antalGivet;
-    private ArrayList<LocalDate> datoer;
+    private ArrayList<LocalDate> datoer = new ArrayList<>();
 
-    public PN(double antalEnheder, ArrayList<LocalDate> datoer) {
-        this.antalEnheder = antalEnheder;
-        this.datoer = datoer;
-        this.antalGivet = 0;
-    }
-
-
-    public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel) {
+    public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antal) {
         super(startDen, slutDen, patient, laegemiddel);
+        this.antalEnheder = antal;
     }
 
 
@@ -40,16 +33,16 @@ public class PN extends Ordination{
     }
 
     public double doegnDosis() {
-        return samletDosis()/DAYS.between(getStartDen(), getSlutDen());
+        return (samletDosis()*antalEnheder)/DAYS.between(getStartDen(), getSlutDen());
     }
 
     @Override
     public String getType() {
-        return null;
+        return "PN Ordination";
     }
 
     public double samletDosis() {
-        return getAntalGangeGivet()*antalEnheder;
+        return getAntalEnheder()*antalEnheder;
     }
 
     /**
@@ -57,7 +50,7 @@ public class PN extends Ordination{
      * @return
      */
     public int getAntalGangeGivet() {
-        return-1;
+        return datoer.size();
     }
 
     public double getAntalEnheder() {

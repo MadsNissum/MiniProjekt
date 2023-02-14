@@ -34,4 +34,5 @@ public class DagligSkaev extends Ordination {
     public String getType() {
         return null;
     }
+
 }

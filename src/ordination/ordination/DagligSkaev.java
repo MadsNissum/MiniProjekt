@@ -10,7 +10,7 @@ public class DagligSkaev extends Ordination {
     // Link to Dosis
     private final ArrayList<Dosis> dosisListe = new ArrayList<>();
 
-    public ArrayList<Dosis> getDosisListe() {
+    public ArrayList<Dosis> getDoser() {
         return new ArrayList<>(dosisListe);
     }
 

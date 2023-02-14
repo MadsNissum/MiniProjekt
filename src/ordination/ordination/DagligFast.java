@@ -35,6 +35,6 @@ public class DagligFast extends Ordination {
 
     @Override
     public String getType() {
-        return null;
+        return "Fast Ordination";
     }
 }

@@ -11,6 +11,7 @@ import ordination.ordination.Ordination;
 import ordination.ordination.PN;
 import ordination.ordination.Patient;
 
+
 public class VisOrdinationPane extends GridPane {
 	private ListView<Patient> lstPatient = new ListView<>();
 	private ListView<Ordination> lstOrdination = new ListView<>();

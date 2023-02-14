@@ -2,9 +2,11 @@ package ordination.ordination;
 
 import java.time.LocalTime;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 public class DagligFast extends Ordination {
 
-    private Dosis[] doser = new Dosis[4];
+    private final Dosis[] doser = new Dosis[4];
 
     public Dosis[] getDoser() {
         return doser;
@@ -19,17 +21,20 @@ public class DagligFast extends Ordination {
 
     @Override
     public double samletDosis() {
-        return 0;
+        double samletDosis = 0;
+        for (Dosis dosis : doser) {
+            samletDosis += dosis.getAntal();
+        }
+        return samletDosis;
     }
 
     @Override
     public double doegnDosis() {
-        return 0;
+        return samletDosis() / DAYS.between(getStartDen(), getSlutDen());
     }
 
     @Override
     public String getType() {
-        return null;
+        return "Fast Ordination";
     }
-    // TODO
 }

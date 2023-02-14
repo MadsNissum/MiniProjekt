@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Edited DagligFast.java">
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Added link to dosis and added method opretDosis in class DagligSkaev">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniProjekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniProjekt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ordination/gui/OrdinationDetailsPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/gui/OrdinationDetailsPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordination/gui/VisOrdinationPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/gui/VisOrdinationPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligSkaev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligSkaev.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -57,11 +60,23 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created project" />
     <MESSAGE value="Added zip files" />
     <MESSAGE value="Added JavaFX" />
     <MESSAGE value="Edited DagligFast.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited DagligFast.java" />
+    <MESSAGE value="Added link to dosis and added method opretDosis in class DagligSkaev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added link to dosis and added method opretDosis in class DagligSkaev" />
   </component>
 </project>

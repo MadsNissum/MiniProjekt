@@ -5,7 +5,6 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class DagligSkaev extends Ordination {
-    // TODO
 
     // Link to Dosis
     private final ArrayList<Dosis> dosisListe = new ArrayList<>();

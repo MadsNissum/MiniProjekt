@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="givDosis metode">
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="samletDosis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ordination/ordination/PN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/PN.java" afterDir="false" />
     </list>
@@ -75,6 +75,7 @@
     <MESSAGE value="Edited DagligFast.java" />
     <MESSAGE value="Added link to dosis and added method opretDosis in class DagligSkaev" />
     <MESSAGE value="givDosis metode" />
-    <option name="LAST_COMMIT_MESSAGE" value="givDosis metode" />
+    <MESSAGE value="samletDosis" />
+    <option name="LAST_COMMIT_MESSAGE" value="samletDosis" />
   </component>
 </project>

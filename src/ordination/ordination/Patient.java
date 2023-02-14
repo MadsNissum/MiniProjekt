@@ -9,7 +9,6 @@ public class Patient {
 
     private ArrayList<Ordination> ordinationer = new ArrayList<>();
 
-    // TODO: Link til Ordination
 
     public Patient(String cprnr, String navn, double vaegt) {
         this.cprnr = cprnr;

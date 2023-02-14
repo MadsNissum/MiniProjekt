@@ -32,7 +32,6 @@ public class DagligSkaev extends Ordination {
 
     @Override
     public double doegnDosis() {
-
         return samletDosis()/DAYS.between(getStartDen(), getSlutDen());
     }
 
@@ -40,5 +39,4 @@ public class DagligSkaev extends Ordination {
     public String getType() {
         return null;
     }
-
 }

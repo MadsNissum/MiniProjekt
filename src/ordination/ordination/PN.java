@@ -2,9 +2,12 @@ package ordination.ordination;
 
 import java.time.LocalDate;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 public class PN extends Ordination{
 
     private double antalEnheder;
+
 
     /**
      * Registrerer at der er givet en dosis paa dagen givesDen
@@ -22,7 +25,7 @@ public class PN extends Ordination{
     }
 
     public double doegnDosis() {
-        return 0.0;
+        return samletDosis()/DAYS.between(getStartDen(), getSlutDen());
     }
 
     @Override
@@ -32,8 +35,7 @@ public class PN extends Ordination{
 
 
     public double samletDosis() {
-        // TODO
-        return 0.0;
+        return antalEnheder;
     }
 
     /**

@@ -149,8 +149,7 @@ public class OpretOrdinationDialog extends Stage {
 			parseField(dagligFastPane.getNat(), doser, 3);
 
 			controller.opretDagligFastOrdination(startDato.getValue(),
-					slutDato.getValue(), patient, laegemiddel, doser[0],
-					doser[1], doser[2], doser[3]);
+					slutDato.getValue(), patient, laegemiddel, doser);
 		} catch (IllegalArgumentException e) {
 			lblError.setText(e.getMessage());
 			return;

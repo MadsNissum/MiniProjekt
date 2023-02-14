@@ -1,5 +1,6 @@
 package ordination.ordination;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 import static java.time.temporal.ChronoUnit.DAYS;
@@ -7,6 +8,12 @@ import static java.time.temporal.ChronoUnit.DAYS;
 public class DagligFast extends Ordination {
 
     private final Dosis[] doser = new Dosis[4];
+
+
+    public DagligFast(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double[] doser) {
+        super(startDen, slutDen, patient, laegemiddel);
+        createDoser(doser);
+    }
 
     public Dosis[] getDoser() {
         return doser;

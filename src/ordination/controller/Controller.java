@@ -37,8 +37,7 @@ public class Controller {
 	 * Pre: antal >= 0
 	 * @return opretter og returnerer en PN ordination.
 	 */
-	public PN opretPNOrdination(LocalDate startDen, LocalDate slutDen,
-			Patient patient, Laegemiddel laegemiddel, double antal) {
+	public PN opretPNOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antal) {
 		// TODO
 		return null;
 	}
@@ -49,12 +48,9 @@ public class Controller {
 	 * Pre: startDen, slutDen, patient og laegemiddel er ikke null
 	 * Pre: margenAntal, middagAntal, aftanAntal, natAntal >= 0
 	 */
-	public DagligFast opretDagligFastOrdination(LocalDate startDen,
-			LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
-			double morgenAntal, double middagAntal, double aftenAntal,
-			double natAntal) {
-		// TODO
-		return null;
+	public DagligFast opretDagligFastOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double[] doser) {
+		DagligFast dagligFast = new DagligFast(startDen, slutDen, patient, laegemiddel, doser);
+		return dagligFast;
 	}
 
 	/**
@@ -65,11 +61,9 @@ public class Controller {
 	 * Pre: startDen, slutDen, patient og laegemiddel er ikke null
 	 * Pre: alle tal i antalEnheder > 0
 	 */
-	public DagligSkaev opretDagligSkaevOrdination(LocalDate startDen,
-			LocalDate slutDen, Patient patient, Laegemiddel laegemiddel,
-			LocalTime[] klokkeSlet, double[] antalEnheder) {
-		// TODO
-		return null;
+	public DagligSkaev opretDagligSkaevOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, LocalTime[] klokkeSlet, double[] antalEnheder) {
+		DagligSkaev dagligSkaev = new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
+		return dagligSkaev;
 	}
 
 	/**
@@ -175,7 +169,7 @@ public class Controller {
 
 		this.opretDagligFastOrdination(LocalDate.of(2021, 1, 10),
 				LocalDate.of(2021, 1, 12), storage.getAllPatienter().get(1),
-				storage.getAllLaegemidler().get(1), 2, 0, 1, 0);
+				storage.getAllLaegemidler().get(1), new double[]{2, 0, 1, 0});
 
 		LocalTime[] kl = { LocalTime.of(12, 0), LocalTime.of(12, 40),
 				LocalTime.of(16, 0), LocalTime.of(18, 45) };

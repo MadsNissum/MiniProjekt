@@ -1,6 +1,7 @@
 package ordination.ordination;
 
 import java.sql.Array;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
@@ -10,6 +11,13 @@ public class DagligSkaev extends Ordination {
 
     // Link to Dosis
     private final ArrayList<Dosis> dosisListe = new ArrayList<>();
+
+    public DagligSkaev(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, LocalTime[] klokkeSlet, double[] antalEnheder) {
+        super(startDen, slutDen, patient, laegemiddel);
+        for (int i = 0; i < klokkeSlet.length; i++) {
+            opretDosis(klokkeSlet[i], antalEnheder[i]);
+        }
+    }
 
     public ArrayList<Dosis> getDoser() {
         return new ArrayList<>(dosisListe);

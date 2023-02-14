@@ -14,12 +14,13 @@ public class PN extends Ordination{
      * @return
      */
     public boolean givDosis(LocalDate givesDen) {
-        // TODO
-        return false;   
+        if (givesDen.isAfter(getStartDen()) && givesDen.isBefore(getSlutDen())) {
+            return true;
+        }
+        return false;
     }
 
     public double doegnDosis() {
-        // TODO
         return 0.0;
     }
 

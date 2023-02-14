@@ -4,6 +4,8 @@ import java.sql.Array;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 public class DagligSkaev extends Ordination {
 
     // Link to Dosis
@@ -21,12 +23,17 @@ public class DagligSkaev extends Ordination {
 
     @Override
     public double samletDosis() {
-        return 0;
+        double antalDoser = 0;
+        for (Dosis d : dosisListe) {
+            antalDoser += d.getAntal();
+        }
+        return antalDoser;
     }
 
     @Override
     public double doegnDosis() {
-        return 0;
+
+        return samletDosis()/DAYS.between(getStartDen(), getSlutDen());
     }
 
     @Override

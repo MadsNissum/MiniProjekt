@@ -18,6 +18,11 @@ public class PN extends Ordination{
     }
 
 
+    public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel) {
+        super(startDen, slutDen, patient, laegemiddel);
+    }
+
+
     /**
      * Registrerer at der er givet en dosis paa dagen givesDen
      * Returnerer true hvis givesDen er inden for ordinationens gyldighedsperiode og datoen huskes

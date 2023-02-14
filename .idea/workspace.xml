@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Added link attribute from Ordination to laegemiddel">
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Finished the controller methods and checks.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ordination/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordination/ordination/PN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/PN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,7 @@
     <MESSAGE value="Added link to dosis and added method opretDosis in class DagligSkaev" />
     <MESSAGE value="Added link attributes from Patient to class Ordination" />
     <MESSAGE value="Added link attribute from Ordination to laegemiddel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added link attribute from Ordination to laegemiddel" />
+    <MESSAGE value="Finished the controller methods and checks." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the controller methods and checks." />
   </component>
 </project>

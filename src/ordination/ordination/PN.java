@@ -1,5 +1,7 @@
 package ordination.ordination;
 
+import ordination.gui.TypeOrdination;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -8,13 +10,14 @@ import static java.time.temporal.ChronoUnit.DAYS;
 public class PN extends Ordination{
 
     private double antalEnheder;
+
+    private TypeOrdination typeOrdination;
     private ArrayList<LocalDate> datoer = new ArrayList<>();
 
     public PN(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antal) {
         super(startDen, slutDen, patient, laegemiddel);
         this.antalEnheder = antal;
     }
-
 
     /**
      * Registrerer at der er givet en dosis paa dagen givesDen
@@ -38,7 +41,11 @@ public class PN extends Ordination{
 
     @Override
     public String getType() {
-        return "PN Ordination";
+        return typeOrdination.toString();
+    }
+
+    public void setTypeOrdination(TypeOrdination typeOrdination) {
+        this.typeOrdination = typeOrdination;
     }
 
     public double samletDosis() {

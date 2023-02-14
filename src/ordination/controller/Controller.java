@@ -5,6 +5,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import ordination.gui.TypeOrdination;
 import ordination.ordination.*;
 import ordination.storage.Storage;
 
@@ -37,6 +38,12 @@ public class Controller {
 	public PN opretPNOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double antal) {
 		if (checkStartFoerSlut(startDen, slutDen)) {
 			PN pn = new PN(startDen, slutDen, patient, laegemiddel, antal);
+			pn.setTypeOrdination(TypeOrdination.PN);
+
+			// Skal der addes til storage?
+			storage.addLaegemiddel(laegemiddel);
+			storage.addPatient(patient);
+
 			return pn;
 		} else
 			throw new IllegalArgumentException("Slutdato ligger efter startdato");
@@ -52,6 +59,12 @@ public class Controller {
 	public DagligFast opretDagligFastOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double[] doser) {
 		if (checkStartFoerSlut(startDen, slutDen)) {
 			DagligFast dagligFast = new DagligFast(startDen, slutDen, patient, laegemiddel, doser);
+			dagligFast.setTypeOrdination(TypeOrdination.FAST);
+
+			// Skal vi ikke have noget i storage?
+			storage.addLaegemiddel(laegemiddel);
+			storage.addPatient(patient);
+
 		return dagligFast;
 		} else
 			throw new IllegalArgumentException("Slutdato ligger efter startdato");
@@ -68,6 +81,12 @@ public class Controller {
 	public DagligSkaev opretDagligSkaevOrdination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, LocalTime[] klokkeSlet, double[] antalEnheder) {
 		if (checkStartFoerSlut(startDen, slutDen)) {
 			DagligSkaev dagligSkaev = new DagligSkaev(startDen, slutDen, patient, laegemiddel, klokkeSlet, antalEnheder);
+			dagligSkaev.setTypeOrdination(TypeOrdination.SKAEV);
+
+			// storage?
+			storage.addPatient(patient);
+			storage.addLaegemiddel(laegemiddel);
+
 		return dagligSkaev;
 		} else
 			throw new IllegalArgumentException("Slutdato ligger efter startdato");

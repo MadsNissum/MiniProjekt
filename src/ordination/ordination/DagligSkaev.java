@@ -1,5 +1,7 @@
 package ordination.ordination;
 
+import ordination.gui.TypeOrdination;
+
 import java.sql.Array;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -8,6 +10,8 @@ import java.util.ArrayList;
 import static java.time.temporal.ChronoUnit.DAYS;
 
 public class DagligSkaev extends Ordination {
+
+    private TypeOrdination typeOrdination;
 
     // Link to Dosis
     private final ArrayList<Dosis> dosisListe = new ArrayList<>();
@@ -45,6 +49,9 @@ public class DagligSkaev extends Ordination {
 
     @Override
     public String getType() {
-        return "Skaev ordination";
+        return typeOrdination.toString();
+    }
+    public void setTypeOrdination(TypeOrdination typeOrdination) {
+        this.typeOrdination = typeOrdination;
     }
 }

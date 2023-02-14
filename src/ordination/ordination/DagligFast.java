@@ -1,5 +1,7 @@
 package ordination.ordination;
 
+import ordination.gui.TypeOrdination;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -8,6 +10,9 @@ import static java.time.temporal.ChronoUnit.DAYS;
 public class DagligFast extends Ordination {
 
     private final Dosis[] doser = new Dosis[4];
+
+
+    private TypeOrdination typeOrdination;
 
 
     public DagligFast(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel, double[] doser) {
@@ -42,6 +47,10 @@ public class DagligFast extends Ordination {
 
     @Override
     public String getType() {
-        return "Fast Ordination";
+        return typeOrdination.toString();
+    }
+
+    public void setTypeOrdination(TypeOrdination typeOrdination) {
+        this.typeOrdination = typeOrdination;
     }
 }

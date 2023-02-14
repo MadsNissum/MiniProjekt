@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="givDosis metode" />
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Added link attributes from Patient to class Ordination" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +71,7 @@
     <MESSAGE value="Added JavaFX" />
     <MESSAGE value="Edited DagligFast.java" />
     <MESSAGE value="Added link to dosis and added method opretDosis in class DagligSkaev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added link to dosis and added method opretDosis in class DagligSkaev" />
+    <MESSAGE value="Added link attributes from Patient to class Ordination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added link attributes from Patient to class Ordination" />
   </component>
 </project>

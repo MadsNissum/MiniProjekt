@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Added JavaFX">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ordination/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/controller/Controller.java" afterDir="false" />
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="Edited DagligFast.java">
+      <change beforePath="$PROJECT_DIR$/src/ordination/gui/OrdinationDetailsPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/gui/OrdinationDetailsPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ordination/storage/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/storage/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +61,7 @@
     <MESSAGE value="Created project" />
     <MESSAGE value="Added zip files" />
     <MESSAGE value="Added JavaFX" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JavaFX" />
+    <MESSAGE value="Edited DagligFast.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited DagligFast.java" />
   </component>
 </project>

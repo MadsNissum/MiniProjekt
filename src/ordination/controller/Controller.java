@@ -92,7 +92,6 @@ public class Controller {
      */
     public void ordinationPNAnvendt(PN ordination, LocalDate dato) {
         if (!ordination.givDosis(dato)) {
-            System.out.println("TEST");
             throw new IllegalArgumentException("Slutdato ligger efter startdato");
         }
     }

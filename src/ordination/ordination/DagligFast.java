@@ -8,8 +8,6 @@ import java.time.LocalTime;
 public class DagligFast extends Ordination {
 
     private final Dosis[] doser = new Dosis[4];
-
-
     private TypeOrdination typeOrdination;
 
 

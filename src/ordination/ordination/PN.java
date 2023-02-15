@@ -33,8 +33,6 @@ public class PN extends Ordination{
     }
 
     public double doegnDosis() {
-        System.out.println(samletDosis());
-        System.out.println(antalDage());
         return (samletDosis())/antalDage();
     }
 

@@ -27,8 +27,7 @@ public class PN extends Ordination{
      * @return
      */
     public boolean givDosis(LocalDate givesDen) {
-        if (givesDen.isAfter(getStartDen()) && givesDen.isBefore(getSlutDen()) ||
-                givesDen.isEqual(getStartDen()) && givesDen.isEqual(getSlutDen())) {
+        if (givesDen.isAfter(getStartDen()) && givesDen.isBefore(getSlutDen()) || givesDen.isEqual(getStartDen()) && givesDen.isEqual(getSlutDen())) {
             datoer.add(givesDen);
             return true;
         }

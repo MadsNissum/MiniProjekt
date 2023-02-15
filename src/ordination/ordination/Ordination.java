@@ -5,12 +5,10 @@ import java.time.LocalDate;
 import static java.time.temporal.ChronoUnit.DAYS;
 
 public abstract class Ordination {
-    private LocalDate startDen;
-    private LocalDate slutDen;
+    private final LocalDate startDen;
+    private final LocalDate slutDen;
 
     private Laegemiddel laegemiddel;
-
-    // TODO Link til Laegemiddel
 
     public Ordination(LocalDate startDen, LocalDate slutDen, Patient patient, Laegemiddel laegemiddel) {
         this.startDen = startDen;
@@ -50,19 +48,18 @@ public abstract class Ordination {
 
     /**
      * Returnerer den totale dosis der er givet i den periode ordinationen er gyldig
-     * @return
      */
     public abstract double samletDosis();
 
     /**
      * Returnerer den gennemsnitlige dosis givet pr dag i den periode ordinationen er gyldig
-     * @return
      */
-    public abstract double doegnDosis();
+    public double doegnDosis() {
+        return samletDosis()/antalDage();
+    }
 
     /**
      * Returnerer ordinationstypen som en String
-     * @return
      */
     public abstract String getType();
 }

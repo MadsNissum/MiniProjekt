@@ -3,7 +3,7 @@ package ordination.ordination;
 import java.util.ArrayList;
 
 public class Patient {
-    private String cprnr;
+    private final String cprnr;
     private String navn;
     private double vaegt;
 

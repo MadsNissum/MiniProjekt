@@ -32,10 +32,6 @@ public class PN extends Ordination{
         return false;
     }
 
-    public double doegnDosis() {
-        return samletDosis()/antalDage();
-    }
-
     @Override
     public String getType() {
         return typeOrdination.toString();

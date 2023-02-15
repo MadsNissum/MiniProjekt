@@ -40,11 +40,6 @@ public class DagligSkaev extends Ordination {
     }
 
     @Override
-    public double doegnDosis() {
-        return samletDosis()/antalDage();
-    }
-
-    @Override
     public String getType() {
         return typeOrdination.toString();
     }

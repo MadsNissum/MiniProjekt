@@ -105,7 +105,7 @@ public class Controller {
     public double anbefaletDosisPrDoegn(Patient patient, Laegemiddel laegemiddel) {
         if (patient.getVaegt() < 25) {
             return laegemiddel.getEnhedPrKgPrDoegnLet() * patient.getVaegt();
-        } else if (patient.getVaegt() <= 120) {
+        } else if (patient.getVaegt() > 120) {
             return laegemiddel.getEnhedPrKgPrDoegnTung() * patient.getVaegt();
         } else {
             return laegemiddel.getEnhedPrKgPrDoegnNormal() * patient.getVaegt();
@@ -171,6 +171,7 @@ public class Controller {
         this.opretPatient("050972-1233", "Hans Jørgensen", 89.4);
         this.opretPatient("011064-1522", "Ulla Nielsen", 59.9);
         this.opretPatient("090149-2529", "Ib Hansen", 87.7);
+        this.opretPatient("092355-2529", "Jens Hansen", -10);
 
         this.opretLaegemiddel("Acetylsalicylsyre", 0.1, 0.15, 0.16, "Styk");
         this.opretLaegemiddel("Paracetamol", 1, 1.5, 2, "Ml");
@@ -209,5 +210,4 @@ public class Controller {
                 LocalDate.of(2021, 1, 24), storage.getAllPatienter().get(1),
                 storage.getAllLaegemidler().get(2), kl, an);
     }
-
 }

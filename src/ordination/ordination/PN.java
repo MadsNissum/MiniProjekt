@@ -33,7 +33,7 @@ public class PN extends Ordination{
     }
 
     public double doegnDosis() {
-        return (samletDosis())/antalDage();
+        return samletDosis()/antalDage();
     }
 
     @Override

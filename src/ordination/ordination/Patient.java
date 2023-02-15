@@ -44,8 +44,6 @@ public class Patient {
         this.ordinationer = ordinationer;
     }
 
-    //TODO: Metoder (med specifikation) til at vedligeholde link til Ordination
-
     public void addOrdination(Ordination ordination) {
         if (!ordinationer.contains(ordination)) {
             ordinationer.add(ordination);

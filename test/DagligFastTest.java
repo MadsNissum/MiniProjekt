@@ -6,6 +6,7 @@ class DagligFastTest {
 
     @Test
     void samletDosisTest() {
+
     }
 
     @Test

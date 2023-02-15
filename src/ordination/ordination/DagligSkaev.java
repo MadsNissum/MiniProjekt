@@ -2,7 +2,6 @@ package ordination.ordination;
 
 import ordination.gui.TypeOrdination;
 
-import java.sql.Array;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;

@@ -5,8 +5,6 @@ import ordination.gui.TypeOrdination;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import static java.time.temporal.ChronoUnit.DAYS;
-
 public class DagligFast extends Ordination {
 
     private final Dosis[] doser = new Dosis[4];
@@ -42,7 +40,7 @@ public class DagligFast extends Ordination {
 
     @Override
     public double doegnDosis() {
-        return samletDosis() / DAYS.between(getStartDen(), getSlutDen());
+        return samletDosis() / antalDage();
     }
 
     @Override

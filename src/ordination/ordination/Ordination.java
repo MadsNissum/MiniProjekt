@@ -1,7 +1,8 @@
 package ordination.ordination;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+
+import static java.time.temporal.ChronoUnit.DAYS;
 
 public abstract class Ordination {
     private LocalDate startDen;
@@ -39,7 +40,7 @@ public abstract class Ordination {
      * @return antal dage ordinationen gælder for
      */
     public int antalDage() {
-        return (int) ChronoUnit.DAYS.between(startDen, slutDen) + 1;
+        return (int) DAYS.between(startDen, slutDen) + 1;
     }
 
     @Override

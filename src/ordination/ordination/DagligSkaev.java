@@ -7,8 +7,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
-import static java.time.temporal.ChronoUnit.DAYS;
-
 public class DagligSkaev extends Ordination {
 
     private TypeOrdination typeOrdination;
@@ -44,7 +42,7 @@ public class DagligSkaev extends Ordination {
 
     @Override
     public double doegnDosis() {
-        return samletDosis()/DAYS.between(getStartDen(), getSlutDen());
+        return samletDosis()/antalDage();
     }
 
     @Override

@@ -5,8 +5,6 @@ import ordination.gui.TypeOrdination;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import static java.time.temporal.ChronoUnit.DAYS;
-
 public class PN extends Ordination{
 
     private double antalEnheder;
@@ -35,7 +33,9 @@ public class PN extends Ordination{
     }
 
     public double doegnDosis() {
-        return (samletDosis()*antalEnheder)/DAYS.between(getStartDen(), getSlutDen());
+        System.out.println(samletDosis());
+        System.out.println(antalDage());
+        return (samletDosis())/antalDage();
     }
 
     @Override
@@ -48,7 +48,7 @@ public class PN extends Ordination{
     }
 
     public double samletDosis() {
-        return getAntalEnheder()*antalEnheder;
+        return getAntalGangeGivet()*antalEnheder;
     }
 
     /**

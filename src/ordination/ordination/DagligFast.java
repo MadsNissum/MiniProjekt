@@ -21,6 +21,13 @@ public class DagligFast extends Ordination {
     }
 
     public void createDoser(double[] doser) {
+
+        for (int i = 0; i < doser.length; i++) {
+            if (doser[i] < 0) {
+                doser[i] = 0;
+            }
+        }
+
        this.doser[0] = new Dosis(LocalTime.of(6, 0), doser[0]);
        this.doser[1] = new Dosis(LocalTime.NOON, doser[1]);
        this.doser[2] = new Dosis(LocalTime.of(18,0), doser[2]);

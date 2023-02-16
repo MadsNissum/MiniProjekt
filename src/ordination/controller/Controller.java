@@ -10,7 +10,7 @@ import ordination.ordination.*;
 import ordination.storage.Storage;
 
 public class Controller {
-    private Storage storage;
+    private final Storage storage;
     private static Controller controller;
 
     private Controller() {

@@ -75,5 +75,4 @@ public class PNTest {
         //Assert
         assertEquals("Cannot invoke \"java.time.temporal.Temporal.until(java.time.temporal.Temporal, java.time.temporal.TemporalUnit)\" because \"temporal1Inclusive\" is null", exception.getMessage());
     }
-
 }

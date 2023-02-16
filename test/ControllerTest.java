@@ -97,9 +97,7 @@ public class ControllerTest {
     void TC4_opretPNOrdiantion_nullInputLaegemiddel() {
         Patient patient = new Patient("", "", 10);
 
-
-         PN result = controller.opretPNOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, null, 10);
-
+        PN result = controller.opretPNOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, null, 10);
 
         assertEquals(0, result.samletDosis());
         assertEquals(14, result.antalDage());
@@ -112,7 +110,7 @@ public class ControllerTest {
 
         DagligFast result = controller.opretDagligFastOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, laegemiddel, new double[]{1,3,4,0});
 
-        assertEquals(8, result.samletDosis());
+        assertEquals(112, result.samletDosis());
         assertEquals(14, result.antalDage());
     }
 
@@ -130,6 +128,28 @@ public class ControllerTest {
     }
 
     @Test
+    void TC3_opretDagligFastOrdiantion_nullPatient() {
+        Laegemiddel laegemiddel = new Laegemiddel("", 1, 1.5, 2, "");
+
+
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            controller.opretDagligFastOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), null, laegemiddel, new double[]{1,3,4,0});
+        });
+
+        assertEquals("Cannot invoke \"ordination.ordination.Patient.addOrdination(ordination.ordination.Ordination)\" because \"patient\" is null", exception.getMessage());
+    }
+
+    @Test
+    void TC4_opretDagligFastOrdiantion_nullLaegemiddel() {
+        Patient patient = new Patient("", "", 10);
+
+        DagligFast result = controller.opretDagligFastOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, null, new double[]{1,3,4,0});
+
+        assertEquals(112, result.samletDosis());
+        assertEquals(14, result.antalDage());
+    }
+
+    @Test
     void TC1_opretDagligSkaevOrdiantion() {
         Patient patient = new Patient("", "", 10);
         Laegemiddel laegemiddel = new Laegemiddel("", 1, 1.5, 2, "");
@@ -138,7 +158,7 @@ public class ControllerTest {
 
         DagligSkaev result = controller.opretDagligSkaevOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, laegemiddel, klokkeslet, antalEnheder);
 
-        assertEquals(7, result.samletDosis());
+        assertEquals(98, result.samletDosis());
         assertEquals(14, result.antalDage());
     }
 
@@ -154,6 +174,31 @@ public class ControllerTest {
         });
 
         assertEquals("Slutdato ligger efter startdato", exception.getMessage());
+    }
+
+    @Test
+    void TC3_opretDagligSkaevOrdiantion_nullPatient() {
+        Laegemiddel laegemiddel = new Laegemiddel("", 1, 1.5, 2, "");
+        LocalTime[] klokkeslet = new LocalTime[]{LocalTime.of(12,0), LocalTime.of(18,30)};
+        double[] antalEnheder = new double[]{2,5};
+
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            controller.opretDagligSkaevOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), null, laegemiddel, klokkeslet, antalEnheder);
+        });
+
+        assertEquals("Cannot invoke \"ordination.ordination.Patient.addOrdination(ordination.ordination.Ordination)\" because \"patient\" is null", exception.getMessage());
+    }
+
+    @Test
+    void TC4_opretDagligSkaevOrdiantion_nullLaegemiddel() {
+        Patient patient = new Patient("", "", 10);
+        LocalTime[] klokkeslet = new LocalTime[]{LocalTime.of(12,0), LocalTime.of(18,30)};
+        double[] antalEnheder = new double[]{2,5};
+
+        DagligSkaev result = controller.opretDagligSkaevOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, null, klokkeslet, antalEnheder);
+
+        assertEquals(98, result.samletDosis());
+        assertEquals(14, result.antalDage());
     }
 
 

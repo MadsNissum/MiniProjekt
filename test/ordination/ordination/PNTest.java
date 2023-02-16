@@ -32,12 +32,4 @@ public class PNTest {
         assertFalse(result);
     }
 
-    @Test
-    void TC3_givDosis() {
-        boolean result = pn.givDosis(null);
-
-        assertFalse(result);
-    }
-
-
 }

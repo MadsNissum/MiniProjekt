@@ -75,12 +75,34 @@ public class ControllerTest {
         Patient patient = new Patient("", "", 10);
         Laegemiddel laegemiddel = new Laegemiddel("", 1, 1.5, 2, "");
 
-
         Exception exception = assertThrows(RuntimeException.class, () -> {
             controller.opretPNOrdination(LocalDate.of(2023, 1, 14), LocalDate.of(2023, 1, 1), patient, laegemiddel, 10);
         });
 
         assertEquals("Slutdato ligger efter startdato", exception.getMessage());
+    }
+
+    @Test
+    void TC3_opretPNOrdiantion_nullInputPatient() {
+        Laegemiddel laegemiddel = new Laegemiddel("", 1, 1.5, 2, "");
+
+        Exception exception = assertThrows(RuntimeException.class, () -> {
+            controller.opretPNOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), null, laegemiddel, 10);
+        });
+
+        assertEquals("Cannot invoke \"ordination.ordination.Patient.addOrdination(ordination.ordination.Ordination)\" because \"patient\" is null", exception.getMessage());
+    }
+
+    @Test
+    void TC4_opretPNOrdiantion_nullInputLaegemiddel() {
+        Patient patient = new Patient("", "", 10);
+
+
+         PN result = controller.opretPNOrdination(LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 14), patient, null, 10);
+
+
+        assertEquals(0, result.samletDosis());
+        assertEquals(14, result.antalDage());
     }
 
     @Test

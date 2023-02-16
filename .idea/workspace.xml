@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="DagligFastTest">
-      <change afterPath="$PROJECT_DIR$/test/ordination/ordination/OrdinationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniProjekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniProjekt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligSkaev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligSkaev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d6964595-a1fe-4824-ad12-0edb74b12e95" />
+        <option name="url" value="git@github.com:/MadsNissum/MiniProjekt.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2LimOIcZcgYAmCCm1S5vNLhwA84" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,10 +69,10 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="ordination.ordination" />
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ordination.gui.App" />
       <module name="MiniProjekt" />
@@ -71,9 +86,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProjekt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.TC1_opretPNOrdiantion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProjekt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="TC1_opretPNOrdiantion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.TC3_opretPNOrdiantion_nullInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProjekt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="TC3_opretPNOrdiantion_nullInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.TC4_opretPNOrdiantion_nullInputLaegemiddel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProjekt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="TC4_opretPNOrdiantion_nullInputLaegemiddel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.ControllerTest.TC4_opretPNOrdiantion_nullInputLaegemiddel" />
+        <item itemvalue="JUnit.ControllerTest.TC3_opretPNOrdiantion_nullInput" />
+        <item itemvalue="JUnit.ControllerTest.TC1_opretPNOrdiantion" />
+        <item itemvalue="JUnit.ControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +158,8 @@
     <MESSAGE value="Finished the controller methods and checks." />
     <MESSAGE value="Fixed small mistakes" />
     <MESSAGE value="DagligFastTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="DagligFastTest" />
+    <MESSAGE value="Added some tests" />
+    <MESSAGE value="Edited small things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited small things" />
   </component>
 </project>

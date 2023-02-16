@@ -40,7 +40,7 @@ public class DagligFast extends Ordination {
         for (Dosis dosis : doser) {
             samletDosis += dosis.getAntal();
         }
-        return samletDosis;
+        return samletDosis *antalDage();
     }
 
     @Override

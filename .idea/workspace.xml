@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="DagligFastTest">
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="DagligFastTest"/>
+    <list default="true" id="2a83521e-5c09-4723-8510-4886329b781f" name="Changes" comment="OrdinationTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiniProjekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniProjekt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligFast.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ordination/ordination/DagligSkaev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordination/ordination/DagligSkaev.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ordination/ordination/PNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ordination/ordination/PNTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +74,7 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.PNTest.TC3_antalDage">
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ordination.gui.App" />
@@ -125,8 +128,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PNTest.TC3_antalDage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProjekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ordination.ordination.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ordination.ordination" />
+      <option name="MAIN_CLASS_NAME" value="ordination.ordination.PNTest" />
+      <option name="METHOD_NAME" value="TC3_antalDage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PNTest.TC3_antalDage" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.ControllerTest.TC4_opretPNOrdiantion_nullInputLaegemiddel" />
         <item itemvalue="JUnit.ControllerTest.TC3_opretPNOrdiantion_nullInput" />
@@ -158,6 +178,8 @@
     <MESSAGE value="Finished the controller methods and checks." />
     <MESSAGE value="Fixed small mistakes" />
     <MESSAGE value="DagligFastTest" />
+    <MESSAGE value="OrdinationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="OrdinationTest" />
     <MESSAGE value="Added some tests" />
     <MESSAGE value="Edited small things" />
     <option name="LAST_COMMIT_MESSAGE" value="Edited small things" />
